@@ -22,6 +22,7 @@ class Article
     #[ORM\Column(type: 'string', length: 255)]
     private $image;
 
+
     public function getId(): ?int
     {
         return $this->id;
@@ -50,7 +51,7 @@ class Article
 
         return $this;
     }
-
+    
     public function getImage(): ?string
     {
         return $this->image;
