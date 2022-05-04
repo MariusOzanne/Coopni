@@ -1,6 +1,3 @@
-body {
-    background-color: #121212;
-}
 
 #bt1 {
     background-color: #953f95;
@@ -84,17 +81,37 @@ li a {
 #logo{
     width: 250px;
 }
+
+#content-desktop {
+    display: inline;
+    }
+    
+#content-mobile {
+    display: none;
+    }
+
 @media screen and (max-width: 800px)
 {
     #login, #panier{
         width: 20px;
     }
     #logo{
-        width: 120px;
+        width: 50px;
     }
     ul{
         justify-content: center;
     }
+    #content-desktop {
+        display: none;
+        }
+        
+    #content-mobile {
+        display: inline;
+        }
+}
+
+footer{
+    background-color: #0e0e0e;
 }
 
 
