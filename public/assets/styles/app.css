@@ -1,0 +1,90 @@
+body {
+    background-color: lightgray;
+}
+
+#bt1 {
+    background-color: #953f95;
+    margin-left: 45%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding:5px;
+    width:200px;
+}
+
+#bt2 {
+    background-color: #1a2b49;
+    margin-left: 45%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding:5px;
+    width:200px;
+}
+
+#bt3{
+    background-color: #953f95;
+    margin-left: 45%;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding:5px;
+    width:200px;
+}
+
+.connexion {
+text-align: center;
+margin-top: 300px;
+color: white;
+font-family: 'Covered By Your Grace', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+}
+
+p, h1, h2, h3, a{
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 0%;
+    margin: 0%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 40px;
+    overflow: hidden;
+    z-index: 99999999;
+    margin-top: -350px;
+}
+
+svg{
+    z-index:-1;
+}
+
+li {
+    float:left;
+    display: flex;
+    padding-right: 220px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#login, #panier{
+    width: 50px;
+}
+#logo{
+    width: 100px;
+}
+
+
+
+
+
+
