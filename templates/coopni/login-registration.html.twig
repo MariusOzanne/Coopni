@@ -1,13 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<html>
-    <head>
-    <meta charset="UTF-8">
-        <title>Connexion</title>
-        <link rel="stylesheet" href="/assets/styles/app.css">
-        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Lato:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    </head>
-    <body>
+     {% extends 'base.html.twig' %}
+
+   
+    
+    {% block body %}
 
         <h1 class = connexion>Connectez-vous</h1>
 
@@ -21,9 +16,10 @@
 
     <button id="bt3" type = "button">
     Continuez en tant qu'invité
-</button>
-</body>
-</html>
+    </button>
+    {% endblock %}
+
+
 
 
 
