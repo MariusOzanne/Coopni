@@ -1,6 +1,3 @@
-body {
-    background-color: #121212;
-}
 
 #bt1 {
     background-color: #953f95;
@@ -51,21 +48,23 @@ body {
 
 ul {
     list-style-type: none;
+    padding-left: 0;
     margin: 0;
-    padding-top: 40px;
     overflow: hidden;
-    z-index: 99999999;
-    margin-top: -350px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 svg{
     z-index:-1;
+    position: absolute;
 }
 
 li {
     float:left;
     display: flex;
-    padding-right: 220px;
 }
 
 li a {
@@ -80,9 +79,40 @@ li a {
     width: 50px;
 }
 #logo{
-    width: 100px;
+    width: 250px;
 }
 
+#content-desktop {
+    display: inline;
+    }
+    
+#content-mobile {
+    display: none;
+    }
+
+@media screen and (max-width: 800px)
+{
+    #login, #panier{
+        width: 20px;
+    }
+    #logo{
+        width: 50px;
+    }
+    ul{
+        justify-content: center;
+    }
+    #content-desktop {
+        display: none;
+        }
+        
+    #content-mobile {
+        display: inline;
+        }
+}
+
+footer{
+    background-color: #0e0e0e;
+}
 
 
 
