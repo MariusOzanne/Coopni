@@ -12,7 +12,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class SecurityController extends AbstractController
 {
-    #[Route('/inscription', name: 'security_registration')]
+    #[Route('/connexion-inscription/inscription', name: 'registration')]
     public function registration(Request $request, ManagerRegistry $doctrine) {
         
         $entityManager = $doctrine->getManager();
