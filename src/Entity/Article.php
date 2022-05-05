@@ -20,7 +20,8 @@ class Article
     private $description;
 
     #[ORM\Column(type: 'string', length: 255)]
-    private $photo;
+    private $image;
+
 
     public function getId(): ?int
     {
@@ -50,15 +51,15 @@ class Article
 
         return $this;
     }
-
-    public function getPhoto(): ?string
+    
+    public function getImage(): ?string
     {
-        return $this->photo;
+        return $this->image;
     }
 
-    public function setPhoto(string $photo): self
+    public function setImage(string $image): self
     {
-        $this->photo = $photo;
+        $this->image = $image;
 
         return $this;
     }

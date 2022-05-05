@@ -2,25 +2,35 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\Article;
+use App\Form\ArticleType;
+use Doctrine\Persistence\ManagerRegistry;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
 class AdminController extends AbstractController
 {
-    #[Route('/admin', name: 'app_admin')]
-    public function index(): Response
-    {
-        return $this->render('admin/index.html.twig', [
-            'controller_name' => 'AdminController',
-        ]);
-    }
-
     #[Route('/admin/article', name: 'admin_article')]
-    public function createArticle(): Response
+    public function createArticle(Request $request, ManagerRegistry $doctrine): Response
     {
+
+        $entityManager = $doctrine->getManager();
+
+        $article = new Article;
+
+        $form = $this->createForm(ArticleType::class, $article);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()) {
+            $entityManager->persist($article);
+            $entityManager->flush();
+        }
+
         return $this->render('admin/article.html.twig', [
-            'controller_name' => 'AdminController',
+            'form' => $form->createView()
         ]);
     }
 }
