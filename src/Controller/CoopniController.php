@@ -44,7 +44,7 @@ class CoopniController extends AbstractController
         return $this->render('coopni/article4.html.twig');
     }
 
-    #[Route('/contact', name: 'contact')]
+    #[Route('/contact', name: 'contactus')]
     public function contact(): Response
     {
         return $this->render('coopni/contact.html.twig');
@@ -71,13 +71,13 @@ class CoopniController extends AbstractController
     #[Route('/connexion-inscription/inscription', name: 'registration')]
     public function registration(): Response
     {
-        return $this->render('coopni/registration.html.twig');
+        return $this->render('security/registration.html.twig');
     }
 
     #[Route('/connexion-inscription/connexion', name: 'login')]
     public function login(): Response
     {
-        return $this->render('coopni/login.html.twig');
+        return $this->render('security/login.html.twig');
     }
 
     #[Route('/mention-légale', name: 'legal-notice')]

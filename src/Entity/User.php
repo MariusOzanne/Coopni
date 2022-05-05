@@ -25,7 +25,7 @@ class User
         ]));
 
         $metadata->addPropertyConstraint('email', new Assert\Email([
-            'message' => 'Cet e-mail n\'est pas valide.'
+            'message' => 'Veuillez saisir la partie manquante après le symbole "@".L\'adresse "{{email}}" est incomplète.'
         ]));
     }
     #[ORM\Id]
