@@ -38,6 +38,7 @@ font-family: 'Shadows Into Light', cursive;
 p, h1, h2, h3, a{
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 body {
@@ -75,37 +76,37 @@ li a {
     text-decoration: none;
 }
 
-#login, #panier{
+.login,  .panier{
     width: 50px;
 }
-#logo{
+.logo{
     width: 250px;
 }
+.plateforme{
+    width: 140px;
+}
 
-#content-desktop {
+.content-desktop {
     display: inline;
     }
     
-#content-mobile {
+.content-mobile {
     display: none;
     }
 
 @media screen and (max-width: 800px)
 {
-    #login, #panier{
-        width: 20px;
+    .login, .panier{
+        width: 40px;
     }
-    #logo{
-        width: 50px;
+    .logo{
+        width: 90px;
     }
-    ul{
-        justify-content: center;
-    }
-    #content-desktop {
+    .content-desktop {
         display: none;
         }
         
-    #content-mobile {
+    .content-mobile {
         display: inline;
         }
 }
@@ -114,7 +115,15 @@ footer{
     background-color: #0e0e0e;
 }
 
+.txt{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
-
-
+ul.txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
