@@ -1,5 +1,5 @@
 
-#bt1 {
+.bt1 {
     background-color: #953f95;
     margin-left: 45%;
     border-radius: 10px;
@@ -8,23 +8,16 @@
     width:200px;
 }
 
-#bt2 {
+.bt2 {
     background-color: #1a2b49;
     margin-left: 45%;
     border-radius: 10px;
     margin-top: 40px;
     padding:5px;
     width:200px;
+    border-radius: 25px;
 }
 
-#bt3{
-    background-color: #953f95;
-    margin-left: 45%;
-    border-radius: 10px;
-    margin-top: 40px;
-    padding:5px;
-    width:200px;
-}
 
 p, a{
     font-family: 'PT Sans', sans-serif;
@@ -155,4 +148,26 @@ ul.txt{
     width: 500px;
     margin: auto;
     display: block;
+    margin-bottom: -80px;
+}
+
+#btn{
+    margin-left: 1500px;
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 400px;
+}
+#order-tracking{
+    margin-bottom: 0;
+    text-align: center;
+    max-width: 500px;
+    color: black;
+}
+#div{
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 48px;
+    padding-bottom: 60px;
 }
