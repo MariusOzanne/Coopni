@@ -20,13 +20,31 @@ class CoopniController extends AbstractController
         return $this->render('coopni/news.html.twig');
     }
 
-    #[Route('/actualité/article', name: 'article')]
-    public function article(): Response
+    #[Route('/actualité/article1', name: 'article1')]
+    public function article1(): Response
     {
-        return $this->render('coopni/article.html.twig');
+        return $this->render('coopni/article1.html.twig');
     }
 
-    #[Route('/contact', name: 'contact')]
+    #[Route('/actualité/article2', name: 'article2')]
+    public function article2(): Response
+    {
+        return $this->render('coopni/article2.html.twig');
+    }
+
+    #[Route('/actualité/article3', name: 'article3')]
+    public function article3(): Response
+    {
+        return $this->render('coopni/article3.html.twig');
+    }
+
+    #[Route('/actualité/article4', name: 'article4')]
+    public function article4(): Response
+    {
+        return $this->render('coopni/article4.html.twig');
+    }
+
+    #[Route('/contact', name: 'contactus')]
     public function contact(): Response
     {
         return $this->render('coopni/contact.html.twig');
@@ -53,13 +71,13 @@ class CoopniController extends AbstractController
     #[Route('/connexion-inscription/inscription', name: 'registration')]
     public function registration(): Response
     {
-        return $this->render('coopni/registration.html.twig');
+        return $this->render('security/registration.html.twig');
     }
 
     #[Route('/connexion-inscription/connexion', name: 'login')]
     public function login(): Response
     {
-        return $this->render('coopni/login.html.twig');
+        return $this->render('security/login.html.twig');
     }
 
     #[Route('/mention-légale', name: 'legal-notice')]
@@ -78,5 +96,10 @@ class CoopniController extends AbstractController
     public function orderTracking(): Response
     {
         return $this->render('coopni/order-tracking.html.twig');
+    }
+    #[Route('/confirmation-de-commande', name: 'order-confirmation')]
+    public function orderConfirmation(): Response
+    {
+        return $this->render('coopni/order-confirmation.html.twig');
     }
 }

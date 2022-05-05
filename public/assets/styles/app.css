@@ -26,19 +26,20 @@
     width:200px;
 }
 
-.connexion {
-text-align: center;
-margin-top: 300px;
-color: white;
-font-family: 'Covered By Your Grace', cursive;
-font-family: 'Lato', sans-serif;
-font-family: 'Shadows Into Light', cursive;
-}
-
-p, h1, h2, h3, a{
+p, a{
     font-family: 'PT Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
     color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 300px;
+    color: white;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70px;
 }
 
 body {
@@ -127,3 +128,30 @@ ul.txt{
     justify-content: center;
 }
 
+.color{
+    padding: 100px;
+    margin-bottom: 100px;
+    background-color: gray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.texte{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.coopni{
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+
+}
+.img{
+    border-radius: 25px;
+    width: 500px;
+    margin: auto;
+    display: block;
+}
