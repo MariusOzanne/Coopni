@@ -2,19 +2,26 @@
 .bt1 {
     background-color: #953f95;
     margin-left: 45%;
-    border-radius: 10px;
     margin-top: 40px;
     padding:5px;
     width:200px;
+    border-radius: 25px;
 }
 
 .bt2 {
     background-color: #1a2b49;
     margin-left: 45%;
-    border-radius: 10px;
     margin-top: 40px;
     padding:5px;
     width:200px;
+    border-radius: 25px;
+}
+
+.bt3{
+    background-color: white;
+    margin-left: 80%;
+    top: 10%;
+    width: 200px;
     border-radius: 25px;
 }
 
@@ -160,10 +167,10 @@ ul.txt{
 }
 
 #btn{
-    margin-left: 1500px;
+    margin-left: 80%;
     margin-top: 50px;
-    color: white;
     margin-bottom: 400px;
+    color: white;
 }
 #order-tracking{
     margin-bottom: 0;
@@ -246,4 +253,31 @@ ul.txt{
     background-color: gray;
     align-items: center;
     justify-content: space-around;
+}
+
+#maison{
+    background-image: url(../../img/img_fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    position: relative;
+}
+
+.how_about{
+    width: 30%;
+    margin: auto;
+    display: block;
+    padding-top: 25%;
+}
+
+#arrow{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 5%;
+    margin-left: 48%;
+    display: block;
+}
+
+#marge{
+    margin-bottom: 300px;
 }
