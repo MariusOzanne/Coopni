@@ -261,6 +261,7 @@ ul.txt{
     background-size: cover;
     z-index: -10;
     position: relative;
+    padding-bottom: 10%;
 }
 
 .how_about{
@@ -271,8 +272,6 @@ ul.txt{
 }
 
 #arrow{
-    padding-top: 10%;
-    padding-bottom: 10%;
     width: 5%;
     margin-left: 48%;
     display: block;
@@ -280,4 +279,13 @@ ul.txt{
 
 #marge{
     margin-bottom: 300px;
+}
+
+h4{
+    margin-top: 300px;
+    color: white;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 70px;
 }
