@@ -25,7 +25,7 @@ p, a{
     color: white;
 }
 
-h1{
+h1,h2{
     text-align: center;
     margin-top: 300px;
     color: white;
@@ -33,6 +33,13 @@ h1{
     font-family: 'Lato', sans-serif;
     font-family: 'Shadows Into Light', cursive;
     font-size: 70px;
+}
+h3{
+    color: white;
+    font-family: 'Covered By Your Grace', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
 }
 
 body {
@@ -124,15 +131,16 @@ ul.txt{
 
 .color{
     padding: 100px;
-    margin-bottom: 100px;
     background-color: gray;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 150px;
 }
 
 .texte{
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 100px;
 }
 
 .coopni{
@@ -159,10 +167,29 @@ ul.txt{
 }
 #order-tracking{
     margin-bottom: 0;
-    text-align: center;
     max-width: 500px;
     color: black;
 }
+
+.description{
+    margin-bottom: 0;
+    max-width: 500px;
+    color: black;
+    margin-right: 50px;
+}
+
+.lien{
+    margin-bottom: 0;
+    max-width: 500px;
+    color: #953F95;
+}
+
+.email{
+    color: black;
+    justify-content: center;
+    display: flex;
+}
+
 #div{
     align-items: center;
     background-color: gray;
@@ -170,4 +197,53 @@ ul.txt{
     justify-content: space-around;
     padding-top: 48px;
     padding-bottom: 60px;
+}
+
+.division{
+    border-radius: 400px;
+    align-items: center;
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 48px;
+    padding-bottom: 60px;
+}
+
+.imgstudio{
+    border-radius: 25px;
+    width: 30%;
+    margin: -20px;
+    display: block;
+}
+
+.fondateurs{
+    width: 15%;
+    border-radius: 24px;
+
+}
+
+.personnel{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contact{
+    color: black;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.logos{
+    
+    width: 10%;
+    display: flex;
+}
+
+.mail{
+    display: flex;
+    background-color: gray;
+    align-items: center;
+    justify-content: space-around;
 }
